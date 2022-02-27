@@ -8,7 +8,7 @@
   },
   "NFT_NAME": "Shorai",
   "SYMBOL": "SHO",
-  "MAX_SUPPLY": 120,
+  "MAX_SUPPLY": 150,
   "MAX_MINT_PER_TX": 25,
   "WEI_COST": 1000000000000000,
   "DISPLAY_COST": 0.001,
