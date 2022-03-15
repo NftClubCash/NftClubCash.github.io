@@ -188,7 +188,7 @@ async function requestpayment() {
 
 
 // Set the date we're counting down to
-const countDownDate = new Date("Mar 15, 2022 21:00:00 GMT+0100").getTime();
+const countDownDate = new Date("Mar 15, 2022 21:30:00 GMT+0100").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
