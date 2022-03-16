@@ -126,7 +126,7 @@ function showCost() {
   if ((minTokensPerTx < tokensRemaining) && (minTokensPerTx > nTokensToBuy)) { nTokensToBuy = minTokensPerTx; }
   if ((minTokensPerTx > tokensRemaining) && (1 > nTokensToBuy)) { nTokensToBuy = 1; }
   $("#tokensToBuy").val(nTokensToBuy);
-  let cost = Math.round(nTokensToBuy * pricePerWei * 10 ** -12) * 10 ** -6; // get rid of stupid numbers at the end of the value with round
+  let cost = Math.round(nTokensToBuy * pricePerWei / 10 ** 14) / 10 ** 4; // get rid of stupid numbers at the end of the value with round
   $("#cost").html('Cost: <strong>' + cost + ' BCH</strong>');
   return nTokensToBuy;
 }
@@ -145,7 +145,7 @@ async function updateSupply() {
   tokensRemaining = presaleSupply - tokensSold;
   showCost();
 
-  $("#supply").html(tokensRemaining + ' / ' + presaleSupply + ' tokens remaining');
+  $("#supply").html('<b>' + tokensRemaining + ' / ' + presaleSupply + '</b> tokens remaining');
 
   if (0 < tokensRemaining) {
     $('#buyButton').prop('disabled', false);

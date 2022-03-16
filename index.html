@@ -62,42 +62,50 @@
   </header>
 
   <main>
-    <section class="text-center container">
+    <section class="text-center container col-lg-6 col-md-8 col-sm-10 mx-auto mt-2 mb-4">
       <div class="row py-5">
-        <div class="col-lg-6 col-md-8 col-sm-10 mx-auto">
+        <div>
           <h1 class="fw-light"><strong><span>The NFTC Token Presale on
                 SmartBCH</span></strong></h1>
 
-          <h2 class="lead text-muted" style="line-height: 2;"><span><strong><span
+          <h2 class="lead text-muted mx-auto my-3" style="line-height: 2;"><span><strong><span
                   style="font-size: 24px;">Instructions</span></strong></span></h2>
 
-          <h4 class="lead text-muted"><span>Connect MetaMask and select how many
+          <h4 class="lead text-muted mx-auto my-3"><span>Connect MetaMask and select how many
               reward tokens you want to buy.</span></h4>
 
-          <h4 class="lead text-muted"><span id="maxTokensPerTxText">You can buy up to 21441 NFTC per transaction.</span>
+          <h4 class="lead text-muted mx-auto my-3"><span id="maxTokensPerTxText">You can buy up to 21441 NFTC per
+              transaction.</span>
           </h4>
 
-          <h4 class="lead"><span>Note that the purchase cannot be undone.</span></h4>
-          <pre
-            class="lead text-muted"><button type="button" class="btn btn-link my-2" onclick="addTokenToMetaMask()"><img src="icons/MetaMask_Fox.svg" style="width: 28px;" alt="Add to MetaMask"></button><span ></span>CA: 0x8dd87b3f50bE9C6Ac5EC08458803843F0D294B3d</span></pre>
-          <pre
-            class="lead"><button type="button" class="btn btn-link my-2" onclick="updateSupplyButtonClicked()"><img src="icons/arrow-clockwise.svg" style="width: 20px;" alt="Refresh"></button><span id="supply" ><strong>0 / 2144082 NFTC</strong> remaining</span></pre>
-            <!-- <pre
+          <h4 class="lead mx-auto my-4"><span>Note that the purchase cannot be undone.</span></h4>
+
+          <div class="text-muted mx-auto my-4"><span><button type="button" class="btn btn-link"
+                onclick="addTokenToMetaMask()"><img src="icons/MetaMask_Fox.svg" style="width: 28px;"
+                  alt="Add to MetaMask"></button>Contract Address for NFTC:
+              0x8dd87b3f50bE9C6Ac5EC08458803843F0D294B3d</span></div>
+
+          <h4 class="text-monospace mx-auto mt-4 mb-2"><button type="button" class="btn btn-link"
+              onclick="updateSupplyButtonClicked()"><img src="icons/arrow-clockwise.svg" style="width: 20px;"
+                alt="Refresh"></button><span id="supply" class="col-sm-8 col-md-6 col-lg-6"><strong>0 / 2144082
+                NFTC</strong> remaining</span></h4>
+          <!-- <pre
             class="lead"><span id="countdown-date">The presale begins on <strong>March, 15th 2022 at 20:30 UTC</strong></span></pre>
             <pre
             class="lead"><span id="countdown-timer"><strong></strong></span></pre> -->
-          </div>
-          <h4 class="lead text-muted"><span>The presale price is 0.4664 BCH for 10,000 NFTC.</span>
-          </h4>
+        </div>
+        <div class="lead text-muted"><span>The presale price is 0.4664 BCH for 10,000 NFTC.
+        </span></div>
 
-          <h4 class="lead text-muted"><span>The listing price of NFTC is 0.5300 BCH for 10,000 NFTC.</span>
-          </h4>
+        <div class="lead text-muted"><span>The listing price of NFTC is 0.5300 BCH for 10,000 NFTC.</span></div>
 
       </div>
 
-      <div class="col-lg-6 col-md-8 col-sm-8 mx-auto mb-3">
-        <div class="input-group">
-          <div class="input-group-prepend">
+      <div class="mb-3 mx-auto">
+        <div class="input-group mx-auto">
+          <div class="input-group-prepend mx-auto">
+            <button class="btn btn-outline-secondary" type="button"
+              onclick='updateText("tokensToBuy", 1)'>Min</button>
             <button class="btn btn-outline-secondary" type="button"
               onclick='updateText("tokensToBuy", 2500)'>2500</button>
             <button class="btn btn-outline-secondary" type="button"
@@ -106,11 +114,15 @@
               onclick='updateText("tokensToBuy", 7500)'>7500</button>
             <button class="btn btn-outline-secondary" type="button"
               onclick='updateText("tokensToBuy", 10000)'>10000</button>
+              <button class="btn btn-outline-secondary" type="button"
+              onclick='updateText("tokensToBuy", 15000)'>15000</button>
             <button class="btn btn-outline-secondary" type="button"
-              onclick='updateText("tokensToBuy", 20000)'>20000</button>
+              onclick='updateText("tokensToBuy", 18000)'>18000</button>
+              <button class="btn btn-outline-secondary" type="button"
+              onclick='updateText("tokensToBuy", 21441)'>Max</button>
           </div>
-          <input id="tokensToBuy" type="text" class="form-control" value="21441" onchange="showCost()">
         </div>
+        <input id="tokensToBuy" type="text" class="form-control mx-auto" value="21441" onchange="showCost()">
       </div>
 
       <span class="row">
@@ -121,12 +133,12 @@
         </div>
 
         <div class="row">
-          <pre
-            class="col-lg-12 col-md-12 mx-auto mt-3 mb-2"><span class="border" id="cost">Cost: <strong>1 BCH</strong></span></pre>
+          <div
+            class="text-monospace text-muted col-lg-12 col-md-12 mx-auto mt-3 mb-2"><span class="border" id="cost">Cost: <strong>1 BCH</strong></span></div>
         </div>
         <div class="row">
-          <pre
-            class="text-muted col-lg-12 col-md-12 mx-auto mt-1 mb-2"><span class="border" id="processing">Please connect MetaMask to the website and then refresh this website.</span></pre>
+          <div
+            class="text-monospace text-muted col-lg-12 col-md-12 mx-auto mt-1 mb-2"><span class="border" id="processing">Please connect MetaMask to the website and then refresh this website.</span></div>
         </div>
         </div>
     </section>
