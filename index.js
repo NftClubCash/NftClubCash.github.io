@@ -8,7 +8,7 @@ const netId = 10000;
 
 const presaleSupply = 2144082; // 2.14... million
 var tokensRemaining = presaleSupply;
-const maxTokensPerTx = 21441;
+const maxTokensPerTx = 214408;
 const minTokensPerTx = 100;
 
 const pricePerWei = 46640000000000; // 0.00004664 BCH -- real presale price
