@@ -1,0 +1,26 @@
+{
+  "NFT_CONTRACT_ADDRESS": "0xdeb684aa667564a0fedfce9d444dee209b7e4e4a",
+  "TOKEN_CONTRACT_ADDRESS": "0xdeb684aa667564a0fedfce9d444dee209b7e4e4a",
+  "SCAN_LINK": "https://www.smartscan.cash/address/0x0",
+  "NETWORK": {
+    "NAME": "SmartBCH",
+    "SYMBOL": "BCH",
+    "ID": 10000
+  },
+  "NFT_NAME": "Kensho",
+  "SYMBOL": "KENSHO",
+  "MAX_SUPPLY_BCH": 10000,
+  "MAX_SUPPLY_NFTC": 2000,
+  "MAX_MINT_PER_TX": 25,
+  "WEI_COST_BCH": 50000000000000000,
+  "DISPLAY_COST_BCH": 0.05,
+  "WEI_COST_NFTC": 850000000000000000000,
+  "DISPLAY_COST_NFTC": 850,
+  "GAS_LIMIT": 285000,
+  "MARKETPLACE": "Oasis",
+  "MARKETPLACE_LINK": "https://oasis.cash/collection/0x0",
+  "SHOW_BACKGROUND": true,
+  "LAUNCH_DATE": "2022-04-14T17:00:00.000-00:00",
+  "END_DATE": "2022-05-14T17:00:00.000-00:00"
+}
+
